@@ -1,0 +1,22 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# References to base
+bases:
+- ../base
+
+# Resources specific to test environment
+resources:
+  # Add your test applications here
+  # Example: guestbook-app.yaml
+
+# Namespace override for test
+namespace: test
+
+# Environment-specific labels
+commonLabels:
+  environment: test
+
+# Environment-specific annotations
+commonAnnotations:
+  environment: test

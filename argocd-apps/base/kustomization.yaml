@@ -1,0 +1,20 @@
+# Base kustomization - shared across all environments
+# Add common applications or configurations here that apply to all environments
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# List of resources to include
+resources: []
+
+# Namespace for all resources in this kustomization
+# Override in environment-specific overlays
+namespace: default
+
+# Common labels applied to all resources
+commonLabels:
+  managed-by: argocd
+
+# Common annotations applied to all resources
+commonAnnotations:
+  organization: devops
