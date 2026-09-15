@@ -9,6 +9,8 @@ bases:
 resources:
   # Add your dev applications here
   # Example: guestbook-app.yaml
+  - guestbook-example.yaml
+  - guestbook-dev-amm.yaml
 
 # Namespace override for dev
 namespace: dev
