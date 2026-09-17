@@ -8,9 +8,8 @@ resources:
 # Resources specific to dev environment
 # Add your dev applications here
 # Example: guestbook-app.yaml
-- ../dev
-# - guestbook-dev.yaml
-# - guestbook-dev-amm.yaml
+- guestbook-dev.yaml
+- guestbook-dev-amm.yaml
 
 # Namespace override for dev
 namespace: dev
